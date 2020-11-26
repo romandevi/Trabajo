@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/ico.png" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/titulo.css" />
+    <link rel="stylesheet" href="css/fondo.css" />
+    <link rel="stylesheet" href="css/Tarjetas.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <title>Wiki</title>
+  </head>
+  <body>
+    <header>
+      <div class="titulo">
+        <a href="name.html" target="_blank">Jorge Peñaranda</a>
+      </div>
+      <div class="barra-menu" id="menu">
+        <div class="barra-menu__logo">
+          <img src="img/logo.gif" alt="icono" />
+        </div>
+        <div class="barra-menu__opciones">
+          <li>
+            <ul>
+              <a href="index.html">Gatos</a>
+            </ul>
+            <ul>
+              <a href="personas.html">Personas</a>
+            </ul>
+          </li>
+        </div>
+      </div>
+    </header>
+    <div class="fondo">
+      <img src="img/NyanCat.gif" alt="Nyan-Cat" id="gif" />
+    </div>
+    <div class="Contenedor">
+      <div class="Seccion">
+        <div class="Contenedor__Tarjetas">
+          <img
+            class="Contenedor__Tarjetas-Imagen"
+            src="img/Gato-1.jpg"
+            alt="Imagen"
+          />
+          <h2>Pana Miguel</h2>
+          <p class="Contenedor__Tarjetas-texto">
+            Un día un pequeño gatito despertó en un lugar oscuro y cuadrado, el
+            gatito llego a una isla llamada la "isla fresca" y ahí conoció una
+            raza de gatos llamados los "panas" que le pusieron un nombre, y ese
+            era "mi pana miguel" le pusieron así para que formara parte se su
+            isla .
+          </p>
+          <div class="Contenedor__Tarjetas-boton-1">
+            <a
+              href="https://www.youtube.com/watch?v=mD9u0S03_-Y"
+              target="_blank"
+              >Conocerlo</a
+            >
+          </div>
+        </div>
+        <div class="Contenedor__Tarjetas">
+          <img
+            class="Contenedor__Tarjetas-Imagen"
+            src="img/Gato-2.jpg"
+            alt="Imagen"
+          />
+          <div class="Contenedor__Tarjetas-Trending">
+            <p>TRENDING</p>
+          </div>
+          <h2>El Gato</h2>
+          <p class="Contenedor__Tarjetas-texto">
+            Es un gato muy olvidadizo, y se caracteriza por decir "Yo había
+            ponido..." de pie y señalando dónde puso lo que buscaba.
+          </p>
+          <div class="Contenedor__Tarjetas-boton-2">
+            <a
+              href="https://www.youtube.com/watch?v=S0NZQQ0T3NU&list=LLDd8ZnGRq57wdIyf3pvT4YQ&index=915"
+              target="_blank"
+              >Conocerlo</a
+            >
+          </div>
+        </div>
+        <div class="Contenedor__Tarjetas">
+          <img
+            class="Contenedor__Tarjetas-Imagen"
+            src="img/Gato-3.jpg"
+            alt="Imagen"
+          />
+          <h2>Gato de Cheetos</h2>
+          <p class="Contenedor__Tarjetas-texto">
+            Chester Chetos apareció por primera vez en 1988 de forma
+            provisional, pero su popularidad entre el público le ha consagrado
+            como la imagen principal de la marca de snacks.
+          </p>
+          <div class="Contenedor__Tarjetas-boton-3">
+            <a
+              href="https://www.youtube.com/user/CheetosChannel"
+              target="_blank"
+              >Conocerlo</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="dispositivo">
+        <div class="poket">
+          <h2>Versión Poket</h2>
+        </div>
+        <div class="mobile">
+          <h2>Versión Celular</h2>
+        </div>
+        <div class="tablet">
+          <h2>Versión Tablet</h2>
+        </div>
+        <div class="pc">
+          <h2>Versión Computadora</h2>
+        </div>
+        <div class="tv">
+          <h2>Versión TV</h2>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    var menu = document.getElementById("menu");
+    var gif = document.getElementById("gif");
+    var altura = gif.offsetTop;
+
+    window.addEventListener("scroll", function () {
+      if (window.pageYOffset > altura) {
+        menu.classList.add("view");
+      } else {
+        menu.classList.remove("view");
+      }
+    });
+  </script>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/ico.png">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/titulo.css">
+    <link rel="stylesheet" href="css/fondo.css">
+    <link rel="stylesheet" href="css/Tarjetas.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <title>Wiki</title>
+</head>
+<body>
+<header>
+    <div class="titulo">
+        <a href="name.html" target="_blank">Jorge Peñaranda</a>
+    </div>
+    <div class="barra-menu" id="menu">
+        <div class="barra-menu__logo">
+            <img src="img/logo.gif" alt="icono">
+        </div>
+        <div class="barra-menu__opciones">
+            <li>
+                <ul>
+                    <a href="index.html">Gatos</a>
+                </ul>
+                <ul>
+                    <a href="personas.html">Personas</a>
+                </ul>
+            </li>
+        </div>
+    </div>
+</header>
+<div class="fondo">
+    <img src="img/NyanCat.gif" alt="Nyan-Cat" id="gif">
+</div>
+<div class="Contenedor">
+    <div class="Seccion">
+        <div class="Contenedor__Tarjetas">
+            <img class="Contenedor__Tarjetas-Imagen" src="img/ETE-SECH.jpg" alt="Imagen">
+            <h2>Ete Sech</h2>
+            <p class="Contenedor__Tarjetas-texto">“Ete Sech” se origina en Panmá, donde se escuchar a un hombre presentar a su amigo Sech. Sin embargo, otros creen que la frase pertenece al reconocido cantando de reggaeton que suele decirla en todas sus canciones.</p>
+            <div class="Contenedor__Tarjetas-boton-1">
+                <a href="https://www.youtube.com/watch?v=kuzAZ4eQ08c" target="_blank">Conocerlo</a>
+            </div>
+        </div>
+        <div class="Contenedor__Tarjetas">
+            <img class="Contenedor__Tarjetas-Imagen" src="img/Señor-x.jpg" alt="Imagen">
+            <div class="Contenedor__Tarjetas-Trending">
+                <p>TRENDING</p>
+            </div>
+            <h2>Señor X</h2>
+            <p class="Contenedor__Tarjetas-texto">Identida Desconocida</p>
+            <div class="Contenedor__Tarjetas-boton-2">
+                <a href="indentity-mr.x" target="_blank">Conocerlo</a>
+            </div>
+        </div>
+            <div class="Contenedor__Tarjetas">
+                <img class="Contenedor__Tarjetas-Imagen" src="img/El-Pepe.png" alt="Imagen">
+                <h2>El Pepe</h2>
+                <p class="Contenedor__Tarjetas-texto">El Pepe es un personaje que existe en la vida real y se llama Michael González. Él es un joven de 20 años originario de República Dominicana. Se volvió viral en todas las redes sociales, especialmente en YouTube y Tik Tok a partir de un video en el que solo lo nombran.</p>
+                <div class="Contenedor__Tarjetas-boton-3">
+                    <a href="https://www.youtube.com/watch?v=GdJFHwnvdDs" target="_blank">Conocerlo</a>
+            </div>
+        </div>
+    </div>
+</div>
+        <footer>
+            <div class="dispositivo">
+                <div class="poket">
+                    <h2>Versión Poket</h2>
+                </div>
+                <div class="mobile">
+                    <h2>Versión Celular</h2>
+                </div>
+                <div class="tablet">
+                    <h2>Versión Tablet</h2>
+                </div>
+                <div class="pc">
+                    <h2>Versión Computadora</h2>
+                </div>
+                <div class="tv">
+                    <h2>Versión TV</h2>
+                </div>
+            </div>
+        </footer>
+</body>
+<script>
+    var menu = document.getElementById('menu');
+var gif = document.getElementById('gif');
+var altura = gif.offsetTop;
+var bajada = window.pageYOffset;
+
+window.addEventListener('scroll', function(){
+    if (window.pageYOffset > altura) { 
+        menu.classList.add('view')
+    }
+    else {
+        menu.classList.remove('view')
+    }
+})
+</script>
+</html>

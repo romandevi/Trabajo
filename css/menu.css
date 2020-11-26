@@ -1,0 +1,42 @@
+.barra-menu {
+  display: none;
+  width: 100%;
+  background-color: rgba(15, 22, 47, 0.9);
+  z-index: 1000;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+}
+.view {
+  top: 0;
+  display: flex;
+}
+.barra-menu__logo img {
+  width: 4em;
+  margin: 1em;
+  margin-left: 2em;
+}
+.barra-menu__opciones {
+  margin: 1em;
+}
+.barra-menu__opciones ul {
+  padding: 0;
+  margin-left: 40px;
+}
+.barra-menu__opciones li {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-right: 5em;
+  list-style: none;
+}
+.barra-menu__opciones ul a {
+  font-size: 1.2em;
+  color: white;
+  font-weight: bold;
+}
+.barra-menu__opciones ul:hover {
+  font-size: 1.1em;
+  border-bottom: white solid 2px;
+  color: rgb(121, 120, 120);
+}

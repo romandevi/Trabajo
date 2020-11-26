@@ -1,0 +1,51 @@
+.header h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+}
+.dispositivo {
+  text-align: center;
+}
+.poket {
+  display: none;
+}
+.mobile {
+  display: inline-block;
+}
+.tablet {
+  display: none;
+}
+.pc {
+  display: none;
+}
+.tv {
+  display: none;
+}
+@media (max-width: 295px) {
+  header {
+    font-size: 7px;
+  }
+  header h2 {
+    font-size: 1.25em;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    font-size: 15px;
+  }
+}
+@media (min-width: 2048px) {
+  header {
+    font-size: 27px;
+  }
+}
+@media (min-width: 3840px) {
+  header {
+    font-size: 50px;
+  }
+}
