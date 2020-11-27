@@ -38,6 +38,10 @@ html {
     height: 1.2em;
     margin-right: 1em;
     margin-top: -1em;
+    transition: transform 500ms ease;
+}
+.Contenedor__Tarjetas-Trending:hover {
+    transform: rotate(360deg);
 }
 .Contenedor__Tarjetas-Trending p {
     font-size: 0.65em;
