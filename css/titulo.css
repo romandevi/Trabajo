@@ -6,6 +6,9 @@
 .dispositivo {
   text-align: center;
 }
+.nokia {
+  display: none;
+}
 .poket {
   display: none;
 }
