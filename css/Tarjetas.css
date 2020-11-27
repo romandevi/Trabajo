@@ -137,15 +137,32 @@ html {
         display: none;
     }
     }
-@media (min-width: 295px) {
+    @media (min-width: 250px) {
+        html {
+               font-size: 7px;
+        }
+        .nokia {
+            display: inline-block;
+        }
+        .poket {
+            display: none;
+        }
+        .mobile {
+            display: none;
+        }
+        }
+@media (min-width: 320px) {
     html {
-           font-size: 9px;
+           font-size: 11px;
+    }
+    .nokia {
+        display: none;
     }
     .poket {
-        display: inline-block;
+        display: none;
     }
     .mobile {
-        display: none;
+        display: inline-block;
     }
     }
 @media (min-width: 768px) {
