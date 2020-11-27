@@ -13,12 +13,6 @@ body {
   background-image: url();
   margin: 0;
 }
-#name{
-  text-align: center;
-}
-#name img{
-  width: 50%;
-}
 .logo{
   text-align: center;
 }
