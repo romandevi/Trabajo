@@ -142,10 +142,10 @@ html {
                font-size: 7px;
         }
         .nokia {
-            display: inline-block;
+            display: none;
         }
         .poket {
-            display: none;
+            display: inline-block;
         }
         .mobile {
             display: none;
